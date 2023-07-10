@@ -1,11 +1,12 @@
 const express = require('express')
+
+const routes = require('./routes')
 const app = express()
-const {routes} = require('./routes/indexRoutes')
 app.use(express.json())
 
 app.set('port', process.env.PORT || 4000)
 
-app.use(require('./routes/indexRoutes'))
+app.use(routes())
 
 app.listen(app.get('port'), () => {
     console.log('corriendo en el puerto', app.get('port'))
