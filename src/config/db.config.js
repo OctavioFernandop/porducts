@@ -5,6 +5,7 @@ const sequelize = new Sequelize('products','root','12345678',{
     dialect:'mysql'
 })
 
+
 sequelize.authenticate()
 .then(()=>{
     console.log('conexion ok')
@@ -12,6 +13,8 @@ sequelize.authenticate()
 .catch(error =>{
     console.log('error de conexion'+ error)
 })
+
+
 
 module.exports = sequelize
 

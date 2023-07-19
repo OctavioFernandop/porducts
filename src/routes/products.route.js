@@ -5,9 +5,10 @@ const controller = require('../controllers/products.controllers')
 const { validateProduct } = require('../validators/validators.products')
 const productsRouter = express.Router()
 
-
+// const token = require('../controllers/products.controllers')
 
 productsRouter.get('/', async (req, res)=> {
+  res.send('hola mundo')
   res.status(200).send(products)
 })
 
