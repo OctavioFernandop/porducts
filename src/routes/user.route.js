@@ -1,6 +1,6 @@
 const express = require('express')
 const createUser = require('../repository/user.repository')
-const createUserControllers = require('../controllers/user.cotrollers')
+const controller = require('../controllers/user.cotrollers')
 const userRoute = express.Router()
 
 
@@ -15,7 +15,7 @@ userRoute.put('/',(req, res) => {
     res.send('metodo put')
 })
 
-userRoute.post('/', createUserControllers)
+userRoute.post('/', controller.createUserControllers)
 
 userRoute.delete('/', (req, res) => {
 
