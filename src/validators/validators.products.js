@@ -24,6 +24,7 @@ const validateProduct = [
 
             return true
         }),
+        
     check('name')
         .exists()
         .isString()

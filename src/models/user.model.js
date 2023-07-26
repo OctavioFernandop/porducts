@@ -2,9 +2,9 @@ const Sequelize = require('sequelize')
 const sequelize = require('../config/db.config')
 
 const  userModel = sequelize.define(
-    'usuarios',
+    'users',
     {
-     id:{type: Sequelize.STRING, primaryKey: true},
+     id: {type: Sequelize.INTEGER, primaryKey: true},
      password: Sequelize.STRING,
      email: Sequelize.STRING
     },

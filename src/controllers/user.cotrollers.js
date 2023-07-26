@@ -3,7 +3,6 @@ const controller = {}
 
 controller.createUserControllers = async (req, res) => {
     
-    // console.log( "error =>...", req.body)
     try {
 
         const createUser = await createUserRepository(req.body)

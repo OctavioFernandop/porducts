@@ -12,27 +12,4 @@ controller.createProductController =  async (req, res ) => {
     }
   }
 
-// controller.token = async (req, res) =>{
-//   if(req.body.sku == 'fl343l447b' && req.body.name == 'dais' && req.body.price == 2 ){
-//     const payload = {
-//       check: true
-//     }
-//     const token = jwt.sing(payload, app.get('key'),{
-
-//       expiresIn: '7d'
-      
-//     })
-//     res.json({
-//       message: 'autenticacion ok ',
-//       token
-//     })
-
-//   } else{
-//     res.json({
-//       message: 'user o password incorrecto'
-//     })
-//   }
-  
-// }
-//   module.exports = {token}
   module.exports = controller
