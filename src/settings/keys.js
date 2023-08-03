@@ -1,3 +1,3 @@
 module.exports = {
-    key:"12345678"
+  key: '12345678',
 }

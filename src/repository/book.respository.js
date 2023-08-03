@@ -14,6 +14,6 @@
 
 // se van a pdoer exportar varias funciones por eso se pone el {}
 
-//encargado de realizar consultas crud a la db 
+//encargado de realizar consultas crud a la db
 
-// se importa bookModel para obtetener informacion de la tabla 
+// se importa bookModel para obtetener informacion de la tabla
